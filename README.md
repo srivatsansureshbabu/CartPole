@@ -9,6 +9,20 @@ From the Cart-Pole, we have four different variables that we know. We have the c
 # Policy
 For our policy, we used the Proximal Policy Optimization, with the MLPPolicy. The Proximal Policy Optimization rule is essentially to try different actions, many many times. It learns which actions are good, and which actions are bad. The MLPPolicy, just refers to the architecture that this PPO model uses. It returns a tensor of [left,right], where it will show the probability of the cart going left, and the probability of the cart going right. For example, [0.2,0.8], is the probability that the cart goes left is 20%, and the probability that the cart goes right is 80%. 
 
+# Results
+Below are the videos for the different policies we tried.<br>
 
-[10k Training Steps](CartPole_Balancing_RL_10000.mp4)
+Original CartPole: No rules, no learning, consistent failure.<br>
+Policy Without RL, Simple Rules: If the angle was approaching failure, we would move the position of the cart, just using if statements. <br>
+10k Training Steps: We trained a PPO with MLP for 10k steps.<br>
+100k Training Steps: We trained a PPO with MLP for 100k steps.<br>
+
+[Original CartPole]<br>
+[Policy Without RL, Simple Rules]<br>
+[10k Training Steps](CartPole_Balancing_RL_10000.mp4)<br>
 [100k Training Steps](CartPole_Balancing_RL_100k.mp4)
+
+# Takeaways
+Simple if statements and rules aren't the best for automated, gaming-like tasks.<br>
+The PPO with MLPPolicy is one of the beginning, yet effective reinforcement learning models that can be used.<br>
+In general, we need to train our policies atleast 10k times, if not more.
