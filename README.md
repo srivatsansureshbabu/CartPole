@@ -17,8 +17,8 @@ Policy Without RL, Simple Rules: If the angle was approaching failure, we would 
 10k Training Steps: We trained a PPO with MLP for 10k steps.<br>
 100k Training Steps: We trained a PPO with MLP for 100k steps.<br>
 
-[Original CartPole]<br>
-[Policy Without RL, Simple Rules]<br>
+[Original CartPole](cartpole_fail)<br>
+[Policy Without RL, Simple Rules](CartPole_Balancing_NoRL)<br>
 [10k Training Steps](CartPole_Balancing_RL_10000.mp4)<br>
 [100k Training Steps](CartPole_Balancing_RL_100k.mp4)
 
