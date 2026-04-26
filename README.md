@@ -1,5 +1,7 @@
 # CartPole
-![Cart Pole](cartpole.png)
+<p align="center">
+  <img src="cartpole.png" width="400"/>
+</p>
 The Cart Pole is a simulated environment, where there is, simply a cart and a pole together. The cart has to move a certain way in order to keep the pole upright. However, this is much harder than it looks, we can't just use simple if statements on the positioning in order to self balance the pole. We need to use a special kind of machine learning, called reinforcement learning. 
 
 # Knowns
